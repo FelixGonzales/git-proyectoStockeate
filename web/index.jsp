@@ -9,6 +9,8 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <%@include  file="assets/head.html" %>
     
     <%
@@ -28,21 +30,22 @@ and open the template in the editor.
         <div class="container">
             <div class="row titulo-index">
                 <div class="col-12">
-                    <H3>¡Hola <%=usr.getNombre()%>, bienvenido a Stockeate!</H3>                     
+                    <H3>Hola <%=usr.getNombre()%></H3> 
+                    <h2 class="c-violet">Bienvenido a Stockeate</h2>
                 </div>               
             </div>
 
-            <div class="row">
-                <div class="col-12 cajaop">
+            <div class="row borde-s borde-i">
+                <div class="col-12 ">
                     <h4>Reseña</h4>
-                    <p>Esta es una prueba de la lista productos.</p>
+                    <p class="margin-b0">Esta es una prueba de la lista productos.</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 cajaop">
+            <div class="row borde-i">
+                <div class="col-12 ">
                     <h4>Lista de productos</h4>
                     <table class="table">
-                        <tr bgcolor="skyblue">
+                        <tr class="table-titulos" bgcolor="#8691FA">
                             <th>Código Prod.</th>
                             <th>Nombre</th>
                             <th>Descripción</th>
